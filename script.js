@@ -23,13 +23,8 @@ function checkguessing(){
         randNum = Math.floor((Math.random() * 20) + 1);     console.log(randNum);
      }
     else{
-        if(res>input){
-            document.getElementById("correct_number").innerHTML = "😢 Too Low ";
-        }
-        else if(res<input){
-            document.getElementById("correct_number").innerHTML = "😢 Too High ";
-        }
-
+        document.getElementById("correct_number").innerHTML = "😢 Incorrect Number ";
+        
         if(res-5<0)
         {
             res=0;
