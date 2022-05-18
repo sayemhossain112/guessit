@@ -26,10 +26,10 @@ function checkguessing(){
         if(res>input){
             document.getElementById("correct_number").innerHTML = "😢 Too Low ";
         }
-        if(res<input){
+        else if(res<input){
             document.getElementById("correct_number").innerHTML = "😢 Too High ";
         }
-        
+
         if(res-5<0)
         {
             res=0;
