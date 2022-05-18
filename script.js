@@ -12,7 +12,7 @@ function checkguessing(){
         document.getElementById("correct_number").innerHTML = "🏆 Correct Number ";
         res= res+ Number(input);
         var hi = document.getElementById("highest").innerHTML;
-        document.getElementById("guess-number").innerHTML = randNum;
+        // document.getElementById("guess-number").innerHTML = randNum;
         if(Number(hi)>res){
             document.getElementById("highest").innerHTML= hi;
         }
